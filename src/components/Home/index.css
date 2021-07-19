@@ -1,0 +1,18 @@
+.home .home-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.home .home-container
+.home-filter {
+    grid-column: span 1 / span 1;
+    display: fixed;
+    height: 100vh;
+    background: #FFF;
+    border-right: solid 2px #E5E7EB;
+}
+
+.home .home-container
+.home-content {
+    grid-column: span 3 / span 3;
+}

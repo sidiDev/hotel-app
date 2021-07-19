@@ -1,0 +1,89 @@
+.filter .filter-container 
+.brand {
+    width: 100%;
+    padding-left: var(--sm);
+    padding-right: var(--sm);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+    font-size: larger;
+    border-bottom: solid 2px #E5E7EB;
+}
+
+.filter .filter-container 
+.brand svg {
+    width: 1.8rem;
+    height: 1.8rem;
+    color: var(--color);
+}
+
+.filter .filter-container
+.brand span::first-letter {
+    color: var(--color);
+}
+
+.filter-controllers {
+    margin-left: var(--sm);
+    margin-right: var(--sm);
+}
+
+.filter .filter-controllers
+.filter-price-range {
+    margin-top: 15px;
+}
+
+.filter .filter-controllers
+.filter-price-range input {
+    width: 100%;
+}
+
+.filter .filter-controllers
+.filter-price-range input::-webkit-slider-runnable-track {
+    background: #E5E7EB;
+}
+
+.filter .filter-controllers
+.filter-price-range input::-webkit-slider-thumb {
+    background: transparent;
+}
+
+.filter-controllers
+.filter-options-container {
+    display: flex;
+    margin-top: 20px;
+}
+
+.filter-controllers
+.filter-options-container
+.filter-option {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.filter-controllers
+.filter-options-container
+.filter-option label {
+    display: block;
+    color: #4B5563;
+    font-size: 15px;
+}
+
+.filter-controllers
+.filter-options-container
+.filter-option select {
+    background: #FFF;
+    margin-top: 4px;
+    width: 100%;
+    padding: 7px;
+    border-radius: var(--rounded);
+    border: solid 1.4px #E5E7EB;
+    outline: none;
+}
+
+.filter-controllers
+.filter-options-container
+.filter-option select:focus {
+    border: solid 1.4px var(--color);
+}
