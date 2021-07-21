@@ -1,4 +1,7 @@
 .navbar {
+    position: sticky;
+    z-index: 1;
+    top: 0;
     background: #FFF;
     box-shadow: 2px 2px 2px #E5E7EB;
 }
@@ -167,5 +170,31 @@
 
     .hidden {
         display: none !important;
+    }
+}
+
+@media (min-width: 640px) {
+
+    .navbar .navbar-container
+    .nav-search {
+        width: 210px;
+    }
+
+    .navbar .navbar-container
+    .nav-search input {
+        width: 85%;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .navbar .navbar-container
+    .nav-search {
+        width: auto;
+    }
+
+    .navbar .navbar-container
+    .nav-search input {
+        width: 90%;
     }
 }

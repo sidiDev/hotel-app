@@ -1,0 +1,118 @@
+.popular-hotel {
+    display: flex;
+    overflow-x: scroll;
+    overflow: auto;
+    margin-left: var(--lg);
+    margin-right: var(--lg);
+    margin-top: 3em;
+    padding-bottom: 8px;
+}
+
+.popular-hotel::-webkit-scrollbar {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 8px;
+    border-radius: 20px;
+    background: #E5E7EB;
+}
+
+.popular-hotel::-webkit-scrollbar-thumb {
+    background: #9CA3AF;
+    border-radius: 20px;
+}
+
+.popular-hotel
+.popular-hotel-container {
+    display: flex;
+    align-items: center;
+    background: #FFF;
+    border-radius: var(--rounded-md);
+    box-shadow: 0 3px 3px #D1D5DB;
+    margin-right: 20px;
+}
+
+.popular-hotel-container
+.popular-hotel-img {
+    width: 250px;
+    height: 150px;
+}
+
+.popular-hotel-container
+.popular-hotel-img img {
+    border-top-left-radius: var(--rounded-md);
+    border-bottom-left-radius: var(--rounded-md);
+    width: 100%;
+    height: 100%;
+}
+
+.popular-hotel-container
+.hotel-details-container {
+    width: 250px;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.popular-hotel-container
+.hotel-details-container
+.hotel-details {
+    margin-top: 4px;
+    color: #6B7280;
+    font-size: 14px;
+}
+.popular-hotel-container
+.hotel-details-container
+.hotel-details span {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.popular-hotel-container
+.hotel-details-container h1 {
+    font-size: 18px;
+    color: #1F2937;
+    margin-top: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.popular-hotel-container
+.hotel-details-container
+.hotel-price {
+    display: block;
+    margin-top: 8px;
+    color: #6B7280;
+    font-size: 14px;
+}
+
+.popular-hotel-container
+.hotel-details-container
+.hotel-reviews {
+    margin-top: 8px;
+    display: flex;
+}
+
+.popular-hotel-container
+.hotel-details-container
+.hotel-reviews span {
+    color: #6B7280;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.popular-hotel-container
+.hotel-details-container
+.hotel-reviews 
+.hotel-reviews-container svg {
+    width: 1em;
+    height: 1em;
+    color: #FBBF24;
+}
+
+.popular-hotel-container
+.hotel-details-container
+.hotel-reviews 
+.hotel-reviews-container .start {
+    color: #9CA3AF;
+}

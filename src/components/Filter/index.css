@@ -35,18 +35,47 @@
 }
 
 .filter .filter-controllers
-.filter-price-range input {
+.filter-price-range span {
+    margin-top: 15px;
+    color: #374151;
+    font-size: 17px;
+}
+
+.filter .filter-controllers
+.filter-price-range .range {
+    position: relative;
     width: 100%;
+    height: 6px;
+    background: #F3F4F6;
+    border-radius: 20px;
 }
 
 .filter .filter-controllers
-.filter-price-range input::-webkit-slider-runnable-track {
-    background: #E5E7EB;
+.filter-price-range .range
+button {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background: var(--color);
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 .filter .filter-controllers
-.filter-price-range input::-webkit-slider-thumb {
-    background: transparent;
+.filter-price-range .range
+button:active {
+    box-shadow: 0 0 1px 4px #2564eb42;
+}
+
+.filter .filter-controllers
+.filter-price-range .range span {
+    display: block;
+    border-radius: 20px;
+    height: 100%;
+    width: 0;
+    background: var(--color);
 }
 
 .filter-controllers
@@ -86,4 +115,162 @@
 .filter-options-container
 .filter-option select:focus {
     border: solid 1.4px var(--color);
+}
+
+.filter-controllers
+.filter-checkboxs-radios {
+    margin-top: 10px;
+}
+
+.filter-controllers
+.filter-checkboxs-radios span {
+    color: #374151;
+    font-size: 17px;
+    display: block;
+    margin-top: 10px;
+}
+
+.filter-controllers
+.filter-checkboxs-radios
+.filter-checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.filter-controllers
+.filter-checkboxs-radios
+.filter-checkbox label {
+    order: 1;
+    color: #4B5563;
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+.filter-controllers
+.filter-checkboxs-radios
+.filter-checkbox input {
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 23px;
+    height: 23px;
+    border: solid 1.4px #E5E7EB;
+    border-radius: var(--rounded-md);
+}
+
+.filter-controllers
+.filter-checkboxs-radios
+.filter-checkbox input:checked {
+    background: var(--color);
+}
+
+.filter-controllers
+.filter-checkboxs-radios
+.filter-checkbox input:checked::after {
+    position: absolute;
+    content: '';
+    width: 4px;
+    height: 9px;
+    border-bottom: solid 3px #FFF;
+    border-right: solid 3px #FFF;
+    transform: rotate(40deg);
+    top: 3px;
+    right: 7px;
+}
+
+.filter-controllers
+.filter-checkboxs-radios
+.filter-radios {
+    margin-top: 10px;
+}
+
+.filter-controllers
+.filter-checkboxs-radios
+.filter-radios .filter-radio {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.filter-controllers
+.filter-checkboxs-radios
+.filter-radios .filter-radio
+label {
+    order: 1;
+    color: #4B5563;
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+.filter-controllers
+.filter-checkboxs-radios
+.filter-radios .filter-radio
+input {
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 23px;
+    height: 23px;
+    border: solid 1.4px #E5E7EB;
+    border-radius: 50%;
+}
+
+.filter-controllers
+.filter-checkboxs-radios
+.filter-radios .filter-radio
+input:checked {
+    background: #FFF;
+    border: solid 6px var(--color);
+}
+
+.filter-controllers
+.filter-update {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.filter-controllers
+.filter-update button {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: var(--rounded-md);
+    background: var(--color);
+    color: #FFF;
+    cursor: pointer;
+}
+
+.filter-controllers
+.filter-update button:focus {
+    box-shadow: #4e46e5ab 0px 0px 0px 3px;
+}
+
+.close-filter-btn {
+    display: none;
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+
+.close-filter-btn button {
+    position: absolute;
+    right: 0;
+    background: #FFF;
+    color: red;
+    cursor: pointer;
+}
+
+.close-filter-btn button svg {
+    width: 2em;
+    height: 2em;
+}
+
+@media (max-width: 768px) {
+    .close-filter-btn {
+        display: block !important;
+    }
 }

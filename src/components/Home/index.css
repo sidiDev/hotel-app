@@ -1,18 +1,137 @@
 .home .home-container {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    display: flex;
 }
 
-.home .home-container
-.home-filter {
-    grid-column: span 1 / span 1;
-    display: fixed;
+.filter {
     height: 100vh;
     background: #FFF;
     border-right: solid 2px #E5E7EB;
 }
 
+.filter-cover {
+    display: none;
+}
+
+.home .home-container
+.home-filter {
+    width: 25%;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
+
+
 .home .home-container
 .home-content {
-    grid-column: span 3 / span 3;
+    width: 75%;
+    position: absolute;
+    right: 0;
+}
+
+.filter-btn {
+    margin-top: 2em;
+    margin-bottom: -10px;
+    margin-left: var(--lg);
+    margin-right: var(--lg);
+    width: 100px;
+    display: flex;
+    align-items: center;
+    background: #FFF;
+    padding: 4px;
+    cursor: pointer;
+    border-radius: var(--rounded);
+    box-shadow: 0 0 3px #9CA3AF;
+}
+
+.filter-btn span {
+    color: #4B5563;
+    font-size: 14px;
+}
+
+.filter-btn svg {
+    margin-right: 5px;
+    width: 2em;
+    height: 2em;
+    color: var(--color);
+    background: #FFF;
+}
+
+.filter-btn:focus {
+    box-shadow: var(--color) 0px 0px 4px;
+}
+
+.filter-btn {
+    display: none;
+}
+
+@media (max-width: 640px) {
+    .home .home-container {
+        display: block;
+    }
+
+    .filter {
+        border: none;
+    }
+
+    .home .home-container
+    .home-filter {
+        width: 260px;
+        left: -50em;
+        z-index: 2;
+    }
+
+    .filter-controllers {
+        overflow-y: scroll;
+        padding-right: 20px;
+        height: 100vh;
+    }
+
+    .filter-controllers::-webkit-scrollbar {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: 8px;
+        border-radius: 20px;
+        background: #E5E7EB;
+    }
+    
+    .filter-controllers::-webkit-scrollbar-thumb {
+        background: #9CA3AF;
+        border-radius: 20px;
+    }
+
+    .home .home-container
+    .home-content {
+        width: 100%;
+        position: relative;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .home .home-container {
+        display: block;
+    }
+    
+    .home .home-container
+    .home-filter {
+        width: 260px;
+        left: -50em;
+        z-index: 2;
+    }
+
+    .filter-btn {
+        display: flex;
+    }
+
+    .home .home-container
+    .home-content {
+        width: 100%;
+        position: relative;
+    }
+
+    .home .home-container .show-filter {
+        left: 0 !important;
+        transition: .3s ease-out;
+    }
 }
