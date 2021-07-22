@@ -27,7 +27,7 @@ export default () => {
                     return (
                             <Link to={`/hotel/${items.title.replace(/ /g, '-')}`} className="popular-hotel-container">
                                 <div className="popular-hotel-img">
-                                    <img src={'/images/'+items.img} />
+                                    <img src={'/images/'+items.img} loading="lazy" />
                                 </div>
                                 <div className="hotel-details-container">
                                     <div className="hotel-details">
