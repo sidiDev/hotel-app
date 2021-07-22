@@ -15,11 +15,30 @@
 .home .home-container
 .home-filter {
     width: 25%;
+    max-height: 100%;
+    overflow: auto !important;
+    overflow-y: scroll;
     position: fixed;
     top: 0;
     z-index: 3;
+    background: #FFF;
 }
 
+.home .home-container
+.home-filter::-webkit-scrollbar {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 8px;
+    border-radius: 20px;
+    background: #E5E7EB;
+}
+
+.home .home-container
+.home-filter::-webkit-scrollbar-thumb {
+    background: #9CA3AF;
+    border-radius: 20px;
+}
 
 .home .home-container
 .home-content {
@@ -78,26 +97,6 @@
         width: 260px;
         left: -50em;
         z-index: 2;
-    }
-
-    .filter-controllers {
-        overflow-y: scroll;
-        padding-right: 20px;
-        height: 100vh;
-    }
-
-    .filter-controllers::-webkit-scrollbar {
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        width: 8px;
-        border-radius: 20px;
-        background: #E5E7EB;
-    }
-    
-    .filter-controllers::-webkit-scrollbar-thumb {
-        background: #9CA3AF;
-        border-radius: 20px;
     }
 
     .home .home-container

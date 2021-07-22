@@ -10,10 +10,6 @@ export default () => {
         </div>
         <div className="hotel-cards-container">
             <HotelCard />
-            <HotelCard />
-            <HotelCard />
-            <HotelCard />
-            <HotelCard />
         </div>
         </>
     )

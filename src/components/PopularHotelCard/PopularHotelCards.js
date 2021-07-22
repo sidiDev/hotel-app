@@ -10,8 +10,6 @@ export default () => {
         </div>
         <div className="popular-hotel">
             <PopularHotelCard />
-            <PopularHotelCard />
-            <PopularHotelCard />
         </div>
         </>
     )

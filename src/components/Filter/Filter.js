@@ -12,7 +12,7 @@ export default ({ closeFilter }) => {
 
     const mouseUp = () => {
         setPressure(false)
-        document.querySelector('.range').style = 'cursor: default'
+        if (document.querySelector('.range') != null) document.querySelector('.range').style = 'cursor: default'
     }
 
     const mouseDown = () => {
