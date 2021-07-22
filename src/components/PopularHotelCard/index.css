@@ -34,8 +34,8 @@
 
 .popular-hotel-container
 .popular-hotel-img {
-    width: 250px;
     height: 150px;
+    width: 250px;
 }
 
 .popular-hotel-container
@@ -115,4 +115,12 @@
 .hotel-reviews 
 .hotel-reviews-container .start {
     color: #9CA3AF;
+}
+
+@media (max-width: 340px) {
+    .popular-hotel-container
+    .popular-hotel-img {
+        width: 180px;
+        height: 150px;
+    }
 }
