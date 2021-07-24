@@ -1,0 +1,320 @@
+.details-container {
+    margin: 3em var(--lg) 10px var(--lg);
+    display: flex;
+    align-items: flex-start;
+}
+
+.details-container .details,
+.details-container .details-side {
+    flex: 1;
+}
+
+.details-container .details
+.carousel-container {
+    position: relative;
+    width: 100%;
+    height: 340px;
+    background: #FFF;
+}
+
+.details-container .details
+.carousel-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-container .carousel-controller {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.carousel-container .carousel-controller
+button {
+    outline: none;
+    cursor: pointer;
+    background:#FFF;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px #D1D5DB;
+}
+
+
+.carousel-container .carousel-controller
+button:first-child {
+    margin-left: 10px;
+} 
+
+.carousel-container .carousel-controller
+button:last-child {
+    margin-right: 10px;
+}
+
+.carousel-container .carousel-controller
+button svg {
+    width: 1.5em;
+    height: 1.5em;
+    color: var(--color);
+}
+
+.carousel-container .carousel-dots {
+    position: absolute;
+    bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.carousel-container .carousel-dots button {
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #E5E7EB;
+}
+
+.carousel-container
+.carousel-dot-active {
+    background: #FFF !important;
+    border: solid 3px var(--color);
+    padding: 5px;
+}
+
+.carousel-container .like-btn {
+    position: absolute;
+    bottom: -1.5em;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    border: solid 1px #9CA3AF;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.carousel-container .like-btn:focus {
+    background: #FFF;
+}
+
+.carousel-container .like-btn:focus svg {
+    color: red;
+}
+
+.carousel-container .like-btn svg {
+    width: 1.5em;
+    height: 1.5em;
+    color: #4B5563;
+}
+
+.details-container .details
+.title-price-details {
+    margin-top: 1.6em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.details-container .details
+.title-price-details h1 {
+    flex: 1;
+    color: #374151;
+    font-size: 20px;
+}
+
+.hotel-reviews
+.title-price-details span {
+    font-weight: 800;
+    font-size: larger;
+}
+
+.hotel-reviews
+.hotel-reviews-container {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.hotel-reviews
+.hotel-reviews-container svg {
+    width: 1.5em;
+    height: 1.5em;
+    color: #FBBF24;
+}
+
+.hotel-reviews
+.hotel-reviews-container .start {
+    color: #9CA3AF;
+}
+
+.details-container .details-side {
+    background: #FFF;
+    border-radius: var(--rounded-md);
+    margin-top: 0;
+    margin-left: 10px;
+    padding: var(--sm);
+}
+
+.hotel-reviews .overall-rating-container {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hotel-reviews .overall-rating-container
+.overall-rating {
+    width: 200px;
+}
+
+.hotel-reviews .overall-rating-container
+.overall-rating span {
+    display: inline-block;
+    margin-top: 10px;
+    color: #4B5563;
+}
+
+.hotel-reviews .overall-rating-container
+.overall-rating .rating {
+    position: relative;
+    height: 5px;
+    margin-top: 10px;
+    border-radius: 20px;
+    background: #E5E7EB;
+}
+
+.hotel-reviews .overall-rating-container
+.overall-rating .rating::after {
+    position: absolute;
+    content: '';
+    height: 5px;
+    left: 0;
+    border-radius: 20px;
+    background: var(--color);
+}
+
+.hotel-reviews .overall-rating-container
+.container-1 .overall-rating:nth-child(1) .rating::after {
+    width: 70%;
+}
+
+.hotel-reviews .overall-rating-container
+.container-1 .overall-rating:nth-child(2) .rating::after {
+    width: 50%;
+}
+
+.hotel-reviews .overall-rating-container
+.container-1 .overall-rating:nth-child(3) .rating::after {
+    width: 90%;
+}
+
+.hotel-reviews .overall-rating-container
+.container-2 .overall-rating:nth-child(1) .rating::after {
+    width: 80%;
+}
+
+.hotel-reviews .overall-rating-container
+.container-2 .overall-rating:nth-child(2) .rating::after {
+    width: 65%;
+}
+
+.hotel-reviews .overall-rating-container
+.container-2 .overall-rating:nth-child(3) .rating::after {
+    width: 78%;
+}
+
+.details-side .hotel-services {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1em;
+}
+
+.details-side .hotel-services .service {
+    width: 140px;
+    margin: 10px;
+    padding: 8px;
+    box-shadow: 0px 1px 2px #D1D5DB;
+    text-align: center;
+}
+
+.details-side .hotel-services .service
+.service-logo svg  {
+    color: var(--color);
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.details-side .hotel-services .service span {
+    font-size: 14px;
+    color: #4B5563;
+}
+
+/* => @media (min-width: 640px) { ... }
+
+'md': '768px',
+ => @media (min-width: 768px) { ... }
+
+'lg': '1024px',
+ => @media (min-width: 1024px) { ... } */
+
+@media (max-width: 768px) {
+
+    .details-container {
+        display: block;
+    }
+
+    .details-container .details,
+    .details-container .details-side {
+        margin-left: 0;
+        margin-top: 2em;
+    }
+}
+
+@media (max-width: 640px) {
+    
+    .details-container .details
+    .title-price-details {
+        display: block;
+    }
+
+    .details-container .details
+    .title-price-details span {
+        display: inline-block;
+        margin-top: 10px;
+        color: var(--color);
+        font-weight: 800;
+    }
+    
+    .hotel-reviews .overall-rating-container
+    .overall-rating {
+        width: 100%;
+    }
+
+    .hotel-reviews .overall-rating-container {
+        display: block;
+    }
+
+    .details-side .hotel-services {
+        display: block;
+    }
+    
+    .details-side .hotel-services .service {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 390px) {
+    .details-container .details
+    .carousel-container {
+        height: 280px;
+    }
+}
+
+@media (max-width: 300px) {
+    .details-container .details
+    .carousel-container {
+        height: 230px;
+    }
+}

@@ -1,11 +1,9 @@
-import preview from './img7.webp'
-
 export default () => {
     return (
         <div className="about-details">
             <div className="about-img-container">
                 <div className="about-img">
-                    <img src={preview} />
+                    <img src='/images/img7.webp' />
                         <div className="about-img-details">
                             <div className="brand">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">

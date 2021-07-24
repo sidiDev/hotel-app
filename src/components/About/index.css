@@ -224,6 +224,14 @@ span:last-child svg {
     }
  }
 
+ @media (max-width: 434px) {
+    .about-details
+    .about-container .about
+    .stats-container .stat {
+        width: 100%;
+    }
+ }
+
  @media (max-width: 360px) {
     .about-details .about-img {
         height: 300px;

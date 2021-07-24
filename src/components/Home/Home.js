@@ -4,6 +4,7 @@ import HotelCards from '../HotelCard/HotelCards'
 import './index.css'
 import PopularHotelCards from '../PopularHotelCard/PopularHotelCards'
 import { useState } from 'react'
+import NewLetter from '../NewLetter/NewLetter'
 
 export default () => {
 
@@ -34,6 +35,7 @@ export default () => {
                     </button>
                     <PopularHotelCards />
                     <HotelCards />
+                    <NewLetter />
                 </div>
             </div>
         </main>

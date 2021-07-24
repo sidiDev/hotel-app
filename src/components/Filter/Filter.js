@@ -128,26 +128,25 @@ export default ({ closeFilter }) => {
                         <div className="filter-radios">
                             <div className="filter-radio">
                                 <label for="apartement">Apartement</label>
-                                <input type="radio" id="apartement" />
+                                <input type="radio" name="proertyType" id="apartement" />
                             </div>
                             <div className="filter-radio">
                                 <label for="house">House</label>
-                                <input type="radio" id="house" />
+                                <input type="radio" name="proertyType" id="house" />
                             </div>
                             <div className="filter-radio">
                                 <label for="loft">Loft</label>
-                                <input type="radio" id="loft" />
+                                <input type="radio" name="proertyType" id="loft" />
                             </div>
                             <div className="filter-radio">
                                 <label for="townhouse">Townhouse</label>
-                                <input type="radio" id="townhouse" />
+                                <input type="radio" name="proertyType" id="townhouse" />
                             </div>
                         </div>
-
                     </div>
 
                     <div className="filter-update">
-                        <button>
+                        <button onClick={closeFilter}>
                             Update
                         </button>
                     </div>
