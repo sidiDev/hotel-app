@@ -64,9 +64,9 @@
     font-size: x-large;
 }
 
-.about-img-details .brand svg {
-    width: 2.5rem;
-    height: 2.5rem;
+.about-img-details .brand img {
+    width: 3rem !important;
+    height: 3rem;
 }
 
 .about-details .about-img-details p {

@@ -29,7 +29,7 @@ export default ({ closeFilter }) => {
             rangeRef.current.style = 'cursor: pointer'
             rangeBarRef.current.style = `width: ${rangeX}px`
             rangeBtnRef.current.style = `left: ${rangeX - 10}px`
-            setPriceRange(rangeX)
+            setPriceRange(rangeX / 10 * 1000)
         }
     }
 
@@ -40,7 +40,7 @@ export default ({ closeFilter }) => {
         if (rangeX < rangeElX && rangeX > 15) {
             rangeBarRef.current.style = `width: ${rangeX}px`
             rangeBtnRef.current.style = `left: ${rangeX - 10}px`
-            setPriceRange(rangeX)
+            setPriceRange(rangeX / 10 * 1000)
         }
     }
 
@@ -52,13 +52,11 @@ export default ({ closeFilter }) => {
         <div className="filter">
             <div className="filter-container">
                 <div className="brand">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                    </svg>
+                    <img src="/logo.png" />
                     <span>Hotelfy</span>
                 </div>
 
-                <div className="filter-controllers">
+                <form className="filter-controllers" onSubmit={(e) => e.preventDefault()}>
                     <div className="close-filter-btn">
                         <button onClick={closeFilter}>
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -67,7 +65,7 @@ export default ({ closeFilter }) => {
                         </button>
                     </div>
                     <div className="filter-price-range">
-                        <span>Price <span style={{fontSize: '15px'}}>( {Math.floor(priceRange) + 'K/mo'} )</span></span>
+                        <span>Price <span style={{fontSize: '15px'}}>( {Math.floor(priceRange).toLocaleString()} K/mo)</span></span>
                         <div className="range" ref={rangeRef} 
                             onMouseUp={mouseUp} onMouseMove={mouseMove}
                         >
@@ -128,19 +126,19 @@ export default ({ closeFilter }) => {
                         <div className="filter-radios">
                             <div className="filter-radio">
                                 <label for="apartement">Apartement</label>
-                                <input type="radio" name="proertyType" id="apartement" />
+                                <input type="radio" name="apartement" id="apartement" />
                             </div>
                             <div className="filter-radio">
                                 <label for="house">House</label>
-                                <input type="radio" name="proertyType" id="house" />
+                                <input type="radio" name="house" id="house" />
                             </div>
                             <div className="filter-radio">
                                 <label for="loft">Loft</label>
-                                <input type="radio" name="proertyType" id="loft" />
+                                <input type="radio" name="loft" id="loft" />
                             </div>
                             <div className="filter-radio">
                                 <label for="townhouse">Townhouse</label>
-                                <input type="radio" name="proertyType" id="townhouse" />
+                                <input type="radio" name="townhouse" id="townhouse" />
                             </div>
                         </div>
                     </div>
@@ -150,7 +148,7 @@ export default ({ closeFilter }) => {
                             Update
                         </button>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     )

@@ -3,8 +3,8 @@
     width: 100%;
     padding-left: var(--sm);
     padding-right: var(--sm);
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     display: flex;
     align-items: center;
     font-weight: 800;
@@ -13,9 +13,9 @@
 }
 
 .filter .filter-container 
-.brand svg {
-    width: 1.8rem;
-    height: 1.8rem;
+.brand img {
+    width: 3rem;
+    height: 3rem;
     color: var(--color);
 }
 

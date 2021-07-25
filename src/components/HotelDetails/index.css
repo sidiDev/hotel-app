@@ -90,6 +90,7 @@ button svg {
     right: 10px;
     width: 40px;
     height: 40px;
+    background: #f1f1f1;
     border: solid 1px #9CA3AF;
     border-radius: 50%;
     cursor: pointer;
@@ -123,27 +124,27 @@ button svg {
     font-size: 20px;
 }
 
-.hotel-reviews
+.details-side .hotel-reviews
 .title-price-details span {
     font-weight: 800;
     font-size: larger;
 }
 
-.hotel-reviews
+.details-side .hotel-reviews
 .hotel-reviews-container {
     margin-top: 15px;
     display: flex;
     align-items: center;
 }
 
-.hotel-reviews
+.details-side .hotel-reviews
 .hotel-reviews-container svg {
     width: 1.5em;
     height: 1.5em;
     color: #FBBF24;
 }
 
-.hotel-reviews
+.details-side .hotel-reviews
 .hotel-reviews-container .start {
     color: #9CA3AF;
 }

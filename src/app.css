@@ -12,6 +12,7 @@
 
 '2xl': '1536px',
  => @media (min-width: 1536px) { ... } */
+ 
 :root {
     --color: #4F46E5;
     --sm: 1rem;

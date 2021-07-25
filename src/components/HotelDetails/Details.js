@@ -46,7 +46,7 @@ export default ({ hotelData }) => {
                             color: '#4F46E5',
                             marginRight: '10px'
                         }}>{hotelData.reviews.reviewsCount}</span>
-                        <span style={{marginRight: '3px'}}>Review</span>
+                        <span style={{marginRight: '3px'}}>Reviews</span>
                         {
                             getStars(hotelData.reviews.star)
                         }
